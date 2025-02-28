@@ -1,0 +1,169 @@
+.navbar{
+    position: relative;
+    z-index: 1;
+}
+a.navbar-brand, .nav-link{
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 26px;
+}
+.navbar-brand, a .nav-link{
+    text-shadow: 1px 1px 1px #2d2d2d;
+}
+/* utility */
+ a .btn{
+    border-radius: 40px;
+    text-transform: uppercase;
+ }
+.tombol{
+    padding: 10px 0 10px 0;
+    z-index: 1;
+    
+}
+.tombol a{
+    position: relative;
+    border-radius: 40px;
+    text-transform: uppercase;
+    margin-left: 45%;
+    margin-top: 270px;
+}
+a .joinus{
+    border-radius: 40px;
+}
+body .jmtron{
+    background-image: url(Slowly-Returning-to-work-and-still-WFH.jpg);
+    position: relative;
+    background-size: cover;
+    width:100% ;
+    height: 640px;
+    background-repeat: no-repeat;
+    margin-top: -270px;
+}
+body .jmtron::after{
+    content: '';
+    position: absolute;
+    display: block;
+    width: 100%;
+    height: 100%;
+    bottom: 0;
+    background-image: linear-gradient(to top, rgb(0, 0, 0, 0.8), rgba(6, 6, 6, 0));
+
+}
+.display-4{
+    color: aliceblue;
+    text-align: center;
+    margin-top: 120px;
+    text-shadow: 1px 1px 1px #2d2d2d;
+    position: relative;
+    z-index: 1;
+}
+.display-4 span{
+    font-weight:600 ;
+}
+
+.info-panel{
+    height: 80px;
+    box-shadow: 0 3px 20px rgba(0, 0, 0, 0.5);
+    border-radius: 16px;
+    background-color: white;
+    padding: 20px;
+    z-index: 1;
+}
+.container-info{
+    margin-top: 270px;
+
+}
+.info-panel img{
+    height: 32%;
+    width: 32%;
+    float: left;
+    margin-bottom: 30px;
+    margin-right: -10px;
+}
+.info-panel h4{
+    font-size: 16px;
+    text-transform: uppercase;
+
+}
+.info-panel p{
+    font-size: 11px;
+    color: #acacac;
+    margin-top: -10px;
+}
+.container-workspace{
+    margin-top: 160px;
+}
+.workspace img{
+    width: 62%;
+    height: 105%;
+    margin-left: 240px;
+}
+.workspace  h3{
+    font-size: 52px;
+    text-transform: uppercase;
+    font-weight: 400;
+    margin-top: 20px;
+}
+.workspace h3 span{
+    font-weight: 600;
+}
+.workspace a{
+    border-radius: 40px;
+}
+.workspace p{
+    color:#acacac ;
+    font-size: 14px;
+}
+/* testimonal */
+.testimonial{
+    margin-top: 120px;
+    justify-content: center;
+}
+.testimonial h4{
+    font-size: 24px;
+    font-weight: 200;
+    font-style: italic;
+    text-align: center;
+}
+.testimonial img{
+    position: relative;
+    width: 60px;
+    height: 60px;
+    border-radius: 100%;
+    margin: 50px 10px 0 10px;
+    opacity: 0.8;
+}
+.testimonial figure img.utama{
+    width: 80px;
+    height: 80px;
+    opacity: 1;
+    margin-top: 30px;
+
+}
+
+.testimonial figcaption h5{
+    text-align: center;
+    font-size: 14px;
+    color: #2d2d2d;
+}
+.testimonial figcaption p{
+    margin-top: -5px;
+    text-align: center;
+    font-size: 11px;
+    color: #acacac;
+}
+
+/* Desktop version */
+@media (min-width: 992px) {
+    .nav-link{
+        text-transform: uppercase;
+        margin-right: 20px;
+    }
+    .nav-link:hover::after{
+        content: '';
+        display: block;
+        border-bottom: 3px solid rgb(74, 74, 192);
+        margin: auto;
+        padding-bottom: 5px;
+        margin-bottom: -8px;
+    }
+}
