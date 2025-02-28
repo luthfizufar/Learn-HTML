@@ -1,0 +1,53 @@
+body{
+    font-family:sans-serif;
+  }
+  
+  header{
+    font-weight:700;
+    font-size:24px;
+  }
+  
+  p, li{
+    font-weight:500;
+    color:#2d2d2d;
+  }
+  
+  figure{
+    width:100%;
+  }
+  
+  figcaption{
+    margin:10px;
+    padding:8px;
+    font-size:12px;
+    font-weight:normal;
+    text-align:center;
+  }
+  
+  img{
+    max-width:500px;
+    width:66%;
+    position:relative;
+    top:6px;
+  }
+  
+  code{
+    margin:6px 12px;
+    padding:8px;
+    background-color:#f1f1f1;
+    color:#993e3c;
+  }
+  
+  a{
+    text-decoration:none;
+    color:#000;
+    font-size:24px;
+    font-weight:700;
+  }
+  
+  @media only screen and (max-width: 600px)
+  {
+    code{
+      font-weiht:500px;
+    }
+  }

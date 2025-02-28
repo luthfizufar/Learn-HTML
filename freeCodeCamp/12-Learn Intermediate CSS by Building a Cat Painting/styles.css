@@ -1,0 +1,480 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    /* background-color: #acb1ca; */
+    background: linear-gradient(#b7bcd4 35%, #8a97ce 100%);
+}
+
+.cat-head {
+    position: absolute;
+    margin: auto;
+    width: 205px;
+    height: 180px;
+    border: 1px solid transparent;
+    border-radius: 46%;
+    box-shadow:3px 6px 12px #737387;
+    z-index: 1;
+}
+
+@keyframes kawai_hitam {
+    0% {bottom: 10%;}
+    25% {bottom: 10%;}
+    50% {top: 10%;}
+    100% {bottom: 10%;}
+}
+
+@keyframes kawai_putih {
+    0% {top: 10%;}
+    25% {top: 10%;}
+    50% {bottom: 10%;}
+    100% {top: 10%;}
+}
+
+/* Kucing Pertama */
+.cat-head:nth-child(1){
+    right:calc(50% - 110px);
+    left:0;
+    bottom:10%;
+    top:0;
+    background: linear-gradient(#5e5e5e 85%, #45454f 100%);
+    animation-name: kawai_hitam;
+    animation-duration: 0.6s;
+    animation-delay: 0s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+}
+
+.cat-head:nth-child(2){
+    left:calc(50% - 110px);
+    right:0;
+    bottom:0;
+    top:10%;
+    background: linear-gradient(#ff9e42 85%, #f4db5d 100%);
+    animation-name: kawai_putih;
+    animation-duration: 3s;
+    animation-delay: 0.1s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+}
+
+/* Buble Text  */
+.bubble-black{
+    position:absolute;
+    right:calc(50% - 110px);
+    left:30%;
+    bottom:10%;
+    top:calc(20% - 40px);
+    background: linear-gradient(#f0f0f0 65%, #ffffff 100%);
+    width:200px;
+    height:70px;
+    border:1px solid transparent;
+    border-radius: 38px;
+    -webkit-border-radius: 38px;
+    -moz-border-radius: 38px;
+    -ms-border-radius: 38px;
+    -o-border-radius: 38px;
+}
+
+.bubble-white{
+    position:absolute;
+    left:calc(68% - 10px);
+    right:60%;
+    bottom:10%;
+    top:calc(30% - 40px);
+    background: linear-gradient(#f0f0f0 65%, #ffffff 100%);
+    width:40px;
+    height:60px;
+    border:1px solid transparent;
+    border-radius: 38px;
+    -webkit-border-radius: 38px;
+    -moz-border-radius: 38px;
+    -ms-border-radius: 38px;
+    -o-border-radius: 38px;
+}
+
+.bubble-black p{
+    font-family: sans-serif;
+    font-size: 0.9em;
+    font-weight: 600;
+    padding: 4px;
+    text-align: center;
+}
+
+.bubble-white p{
+    font-family: sans-serif;
+    font-size: 0.9em;
+    font-weight: 600;
+    padding: 4px;
+    text-align: center;
+}
+
+.triangel-black{
+    position: absolute;
+    top: 29px;
+    left: -10px;
+    border-top-left-radius: 90px;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 40%;
+    border-bottom-left-radius: 40%;
+    border-left: 20px solid transparent;
+    border-right: 20px solid transparent;
+    border-bottom: 40px solid #f3f3f3;
+    z-index:-1;
+}
+
+.triangel-white{
+    position: absolute;
+    top: 10px;
+    left: 16px;
+    border-top-left-radius: 50px;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 40%;
+    border-bottom-left-radius: 40%;
+    border-left: 20px solid transparent;
+    border-right: 20px solid transparent;
+    border-bottom: 40px solid #f3f3f3;
+    z-index:-1;
+}
+
+/* Responsif saat layar diperkecil */
+@media only screen and (max-width: 768px) {
+    .cat-head:nth-child(1){
+        right:calc(60vw - 110px);
+        bottom:10%;
+        top:0;
+        width: 205px;
+        height: 180px;
+        animation-name: kawai_hitam;
+        animation-duration: 0.8s;
+        animation-delay: 0s;
+        animation-iteration-count: infinity;
+        animation-timing-function: ease-in-out;
+    }
+
+    .cat-head:nth-child(2){
+        left:calc(60vw - 110px);
+        bottom:0;
+        top:10%;
+        background: linear-gradient(#ff9e42 85%, #f4db5d 100%);
+        width: 205px;
+        height: 180px;
+        animation-name: kawai_putih;
+        animation-duration: 4s;
+        animation-delay: 0.1s;
+        animation-iteration-count: infinite;
+        animation-timing-function: ease-in-out;
+    }
+}
+
+/* Kuping Kucing Pertama */
+.cat-head:nth-child(1) .cat-left-ear {
+    position: absolute;
+    top: -26px;
+    left: -31px;
+    z-index: 1;
+    border-top-left-radius: 90px;
+    border-top-right-radius: 10px;
+    transform: rotate(-45deg);
+    border-left: 35px solid transparent;
+    border-right: 35px solid transparent;
+    border-bottom: 70px solid #5e5e5e;
+    -webkit-transform: rotate(-45deg);
+    -moz-transform: rotate(-45deg);
+    -ms-transform: rotate(-45deg);
+    -o-transform: rotate(-45deg);
+}
+
+.cat-head:nth-child(1) .cat-right-ear {
+    position: absolute;
+    top: -26px;
+    left: 163px;
+    z-index: 1;
+    transform: rotate(45deg);
+    border-top-left-radius: 90px;
+    border-top-right-radius: 10px;
+    border-left: 35px solid transparent;
+    border-right: 35px solid transparent;
+    border-bottom: 70px solid #5e5e5e;
+    -webkit-transform: rotate(45deg);
+    -moz-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    -o-transform: rotate(45deg);
+}
+
+.cat-head:nth-child(1) .cat-left-inner-ear {
+    position: absolute;
+    top: 22px;
+    left: -20px;
+    border-top-left-radius: 90px;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 40%;
+    border-bottom-left-radius: 40%;
+    border-left: 20px solid transparent;
+    border-right: 20px solid transparent;
+    border-bottom: 40px solid #3b3b4f;
+}
+
+.cat-head:nth-child(1) .cat-right-inner-ear {
+    position: absolute;
+    top: 22px;
+    left: -20px;
+    border-top-left-radius: 90px;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 40%;
+    border-bottom-left-radius: 40%;
+    border-left: 20px solid transparent;
+    border-right: 20px solid transparent;
+    border-bottom: 40px solid #3b3b4f;
+}
+
+/* Kuping Kucing ke 2 */
+.cat-head:nth-child(2) .cat-left-ear {
+    position: absolute;
+    top: -26px;
+    left: -31px;
+    z-index: 1;
+    border-top-left-radius: 90px;
+    border-top-right-radius: 10px;
+    transform: rotate(-45deg);
+    border-left: 35px solid transparent;
+    border-right: 35px solid transparent;
+    border-bottom: 70px solid #fec148;
+}
+
+.cat-head:nth-child(2) .cat-right-ear {
+    position: absolute;
+    top: -26px;
+    left: 163px;
+    z-index: 1;
+    transform: rotate(45deg);
+    border-top-left-radius: 90px;
+    border-top-right-radius: 10px;
+    border-left: 35px solid transparent;
+    border-right: 35px solid transparent;
+    border-bottom: 70px solid #fec148;
+}
+
+.cat-head:nth-child(2) .cat-left-inner-ear {
+    position: absolute;
+    top: 22px;
+    left: -20px;
+    border-top-left-radius: 90px;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 40%;
+    border-bottom-left-radius: 40%;
+    border-left: 20px solid transparent;
+    border-right: 20px solid transparent;
+    border-bottom: 40px solid #ffdba1;
+}
+
+.cat-head:nth-child(2) .cat-right-inner-ear {
+    position: absolute;
+    top: 22px;
+    left: -20px;
+    border-top-left-radius: 90px;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 40%;
+    border-bottom-left-radius: 40%;
+    border-left: 20px solid transparent;
+    border-right: 20px solid transparent;
+    border-bottom: 40px solid #ffdba1;
+}
+
+.cat-left-eye {
+    position: absolute;
+    top: 54px;
+    left: 39px;
+    border-radius: 60%;
+    transform: rotate(25deg);
+    width: 30px;
+    height: 40px;
+    background-color: #242424;
+}
+
+.cat-right-eye {
+    position: absolute;
+    top: 54px;
+    left: 134px;
+    border-radius: 60%;
+    transform: rotate(-25deg);
+    width: 30px;
+    height: 40px;
+    background-color: #242424;
+}
+
+.cat-left-inner-eye {
+    position: absolute;
+    top: 8px;
+    left: 2px;
+    width: 10px;
+    height: 20px;
+    transform: rotate(10deg);
+    background-color: #ffffffd9;
+    border-radius: 60%;
+    -webkit-transform: rotate(10deg);
+    -moz-transform: rotate(10deg);
+    -ms-transform: rotate(10deg);
+    -o-transform: rotate(10deg);
+}
+
+.cat-right-inner-eye {
+    position: absolute;
+    top: 8px;
+    left: 18px;
+    transform: rotate(-5deg);
+    width: 10px;
+    height: 20px;
+    background-color: #ffffffd9;
+    border-radius: 60%;
+    -webkit-transform: rotate(-5deg);
+    -moz-transform: rotate(-5deg);
+    -ms-transform: rotate(-5deg);
+    -o-transform: rotate(-5deg);
+}
+
+.cat-head:nth-child(1) .cat-nose {
+    position: absolute;
+    top: 108px;
+    left: 85px;
+    border-top-left-radius: 50%;
+    border-bottom-right-radius: 50%;
+    border-bottom-left-radius: 50%;
+    transform: rotate(180deg);
+    border-left: 15px solid transparent;
+    border-right: 15px solid transparent;
+    border-bottom: 20px solid #823c3c;
+    -webkit-transform: rotate(180deg);
+    -moz-transform: rotate(180deg);
+    -ms-transform: rotate(180deg);
+    -o-transform: rotate(180deg);
+}
+
+/* Hidung Kucing ke 2 */
+.cat-head:nth-child(2) .cat-nose{
+    position: absolute;
+    top: 108px;
+    left: 85px;
+    border-top-left-radius: 50%;
+    border-bottom-right-radius: 50%;
+    border-bottom-left-radius: 50%;
+    transform: rotate(180deg);
+    border-left: 15px solid transparent;
+    border-right: 15px solid transparent;
+    border-bottom: 20px solid #f3f550;
+    -webkit-transform: rotate(180deg);
+    -moz-transform: rotate(180deg);
+    -ms-transform: rotate(180deg);
+    -o-transform: rotate(180deg);
+}
+
+.cat-mouth div {
+    width: 30px;
+    height: 50px;
+    border: 2px solid #000;
+    border-radius: 190%/190px 150px 0 0;
+    border-color: black transparent transparent transparent;
+    -webkit-border-radius: 190%/190px 150px 0 0;
+    -moz-border-radius: 190%/190px 150px 0 0;
+    -ms-border-radius: 190%/190px 150px 0 0;
+    -o-border-radius: 190%/190px 150px 0 0;
+}
+
+.cat-mouth-line-left {
+    position: absolute;
+    top: 88px;
+    left: 74px;
+    transform: rotate(170deg);
+    -webkit-transform: rotate(170deg);
+    -moz-transform: rotate(170deg);
+    -ms-transform: rotate(170deg);
+    -o-transform: rotate(170deg);
+}
+
+.cat-mouth-line-right {
+    position: absolute;
+    top: 88px;
+    left: 91px;
+    transform: rotate(165deg);
+}
+
+.cat-whiskers-left div {
+    width: 40px;
+    height: 1px;
+    background-color: #000;
+}
+
+.cat-whiskers-right div {
+    width: 40px;
+    height: 1px;
+    background-color: #000;
+}
+
+.cat-whisker-left-top {
+    position: absolute;
+    top: 120px;
+    left: 52px;
+    transform: rotate(10deg);
+    -webkit-transform: rotate(10deg);
+    -moz-transform: rotate(10deg);
+    -ms-transform: rotate(10deg);
+    -o-transform: rotate(10deg);
+}
+
+.cat-whisker-left-middle {
+    position: absolute;
+    top: 127px;
+    left: 52px;
+    transform: rotate(3deg);
+    -webkit-transform: rotate(3deg);
+    -moz-transform: rotate(3deg);
+    -ms-transform: rotate(3deg);
+    -o-transform: rotate(3deg);
+}
+
+.cat-whisker-left-bottom {
+    position: absolute;
+    top: 134px;
+    left: 52px;
+    transform: rotate(-3deg);
+    -webkit-transform: rotate(-3deg);
+    -moz-transform: rotate(-3deg);
+    -ms-transform: rotate(-3deg);
+    -o-transform: rotate(-3deg);
+}
+
+.cat-whisker-right-top {
+    position: absolute;
+    top: 120px;
+    left: 109px;
+    transform: rotate(-10deg);
+    -webkit-transform: rotate(-10deg);
+    -moz-transform: rotate(-10deg);
+    -ms-transform: rotate(-10deg);
+    -o-transform: rotate(-10deg);
+}
+
+.cat-whisker-right-middle {
+    position: absolute;
+    top: 127px;
+    left: 109px;
+    transform: rotate(-3deg);
+    -webkit-transform: rotate(-3deg);
+    -moz-transform: rotate(-3deg);
+    -ms-transform: rotate(-3deg);
+    -o-transform: rotate(-3deg);
+}
+
+.cat-whisker-right-bottom {
+    position: absolute;
+    top: 134px;
+    left: 109px;
+    transform: rotate(3deg);
+    -webkit-transform: rotate(3deg);
+    -moz-transform: rotate(3deg);
+    -ms-transform: rotate(3deg);
+    -o-transform: rotate(3deg);
+}
+
+

@@ -1,0 +1,186 @@
+** start of undefined **
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Technical Documentation Page</title>
+    <link rel="stylesheet" href="styles.css">
+  </head>
+
+  <body>
+    <nav id="navbar">
+      <header>CSS Document</header>
+      <ul>
+        <li><a href="#Perkenalan" class="nav-link">Perkenalan</a></li>
+        <li><a href="#Apa_itu_CSS" class="nav-link">Apa itu CSS</a>
+</li>
+        <li><a href="#Sintaks_CSS" class="nav-link">Sintaks CSS</a>
+</li>
+        <li><a href="#CSS_Selectors" class="nav-link">CSS Selectors</a>
+</li>
+        <li><a href="#CSS_Combinators" class="nav-link">CSS Combinators</a>
+</li>
+        <li><a href="#CSS_Pseudo_Classes" class="nav-link">CSS Pseudo Classes</a>
+</li>
+        <li><a href="#CSS_Pseudo_Elements" class="nav-link">CSS Pseudo Elements</a>
+</li>
+        <li><a href="#CSS_Attribute_Selector" class="nav-link">CSS Attribute Selector</a>
+</li>
+      </ul>
+    </nav>
+    <br/>
+
+    <main id="main-doc">
+      <section class="main-section" id="Perkenalan">
+        <header>Perkenalan</header>
+        <article>
+          <p>CSS adalah bahasa yang digunakan untuk menata halaman Web.</p>
+        </article>
+      </section>
+
+      <section class="main-section" id="Apa_itu_CSS">
+        <header>Apa itu CSS</header>
+        <article>
+          <ul>
+            <li>CSS adalah singkatan dari Cascading Style Sheet</li>
+            <li>CSS menjelaskan bagaimana elemen HTML ditampilkan di layar atau di media lain</li>
+            <li>CSS menghemat banyak pekerjaan, mengontrol tata letak beberapa halaman web sekaligus</li>
+            <li>Stylesheet eksternal disimpan dalam file CSS</li>
+          </ul>
+        </article>
+      </section>
+
+      <section class="main-section" id="Sintaks_CSS">
+        <header>Sintaks CSS</header>
+        <article>
+          <figure>
+            <img src="https://www.w3schools.com/css/img_selector.gif" alt="Anatomi CSS">
+            <figcaption align="center">Anatomi CSS</figcaption>
+          </figure>
+          <p><strong>Selector</strong> menunjuk ke elemen HTML yang ingin Anda gaya</p>
+          <p><strong>Declaration Block</strong> berisi satu atau lebih deklarasi yang dipisahkan oleh titik koma.</p>
+          <p>Setiap deklarasi menyertakan nama properti CSS dan nilainya, dipisahkan oleh titik dua.</p>
+          <p>Beberapa deklarasi CSS dipisahkan dengan titik koma, dan blok deklarasi diapit oleh kurung kurawal.</p>
+          <strong id="example">Example</strong>
+          <p>Dalam contoh ini semua elemen <p> akan diratakan tengah, dengan warna teks merah:</p>
+          <code>
+            p {
+  color: red;
+  text-align: center;
+}
+          </code>
+          <ul>
+            <li><code>p</code> adalah pemilih dalam CSS (menunjuk ke elemen HTML yang ingin Anda gaya: <p>).</li>
+            <li><code>color</code> adalah properti, dan <code>red</code> merupakan nilai properti</li>
+            <li><code>text-align</code> adalah properti, dan <code>center</code> merupakan nilai properti</li>
+          </ul>
+        </article>
+      </section>
+
+      <section class="main-section" id="CSS_Selectors">
+        <header>CSS Selectors</header>
+        <article>
+          <p>Pemilih CSS digunakan untuk "menemukan" (atau memilih) elemen HTML yang ingin Anda gaya. Kita dapat membagi pemilih CSS menjadi lima kategori:</p>
+          <ul>
+            <li>Selector sederhana (pilih elemen berdasarkan nama, id, kelas)</li>
+            <li>Selector kombinator (memilih elemen berdasarkan hubungan tertentu di antara elemen tersebut)</li>
+            <li>Selector kelas semu (memilih elemen berdasarkan keadaan tertentu)</li>
+            <li>Selector elemen semu (memilih dan memberi gaya pada bagian elemen)</li>
+            <li>Selector atribut (memilih elemen berdasarkan atribut atau nilai atribut)</li>
+          </ul>
+        </article>
+      </section>
+
+      <section class="main-section" id="CSS_Combinators">
+        <header>CSS Combinators</header>
+        <article>
+          <p>nnj</p>
+        </article>
+      </section>
+
+      <section class="main-section" id="CSS_Pseudo_Classes">
+        <header>CSS Pseudo Classes</header>
+        <article>
+          <p>mkmk</p>
+        </article>
+      </section>
+
+      <section class="main-section" id="CSS_Pseudo_Elements">
+        <header>CSS Pseudo Elements</header>
+        <article>
+          <p>jiji</p>
+        </article>
+      </section>
+
+      <section class="main-section" id="CSS_Attribute_Selector">
+        <header>CSS Attribute Selector</header>
+        <article>
+          <p>iji</p>
+        </article>
+      </section>
+    </main>
+  </body>
+</html>
+
+** end of undefined **
+
+** start of undefined **
+
+body{
+  font-family:sans-serif;
+}
+
+header{
+  font-weight:700;
+  font-size:24px;
+}
+
+p, li{
+  font-weight:500;
+  color:#2d2d2d;
+}
+
+figure{
+  width:100%;
+}
+
+figcaption{
+  margin:10px;
+  padding:8px;
+  font-size:12px;
+  font-weight:normal;
+  text-align:center;
+}
+
+img{
+  max-width:500px;
+  width:66%;
+  position:relative;
+  top:6px;
+}
+
+code{
+  margin:6px 12px;
+  padding:8px;
+  background-color:#f1f1f1;
+  color:#993e3c;
+}
+
+a{
+  text-decoration:none;
+  color:#000;
+  font-size:24px;
+  font-weight:700;
+}
+
+@media only screen and (max-width: 600px)
+{
+  code{
+    font-weiht:500px;
+  }
+}
+
+** end of undefined **
+

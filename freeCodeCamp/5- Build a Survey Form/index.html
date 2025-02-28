@@ -1,0 +1,47 @@
+<html>
+  <head>
+    <title>Survey Form</title>
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <h1 id="title">Survey Form</h1>
+    <p id="description">Please fill out this form with the required information</p>
+    
+    <form id="survey-form">
+      <fieldset>
+        <label id="name-label">Name<br><input id="name" type="text" placeholder="enter your name" required></label><br>
+        
+        <label id="email-label">Email<br><input id="email" type="email" placeholder="enter your email" required></label><br>
+        
+        <label id="number-label">Age<br><input id="number" type="number" min="1" max="200" placeholder="how old are you?" required></label><br>
+        <label>
+          perkerjaan<br>
+          <select id="dropdown" >
+            <option value=" ">(select one)</option>
+            <option value="1">Pelajar</option>
+            <option value="2">Sudah bekerja</option>
+            <option value="3">Belum bekerja</option>
+          </select>
+        </label>
+      </fieldset>
+      <fieldset>
+        <p>Do you enjoy your work?</p>
+        <label><input type="radio" id="survey-form" value="yes" name="survey-form">Yes</label>
+        <label><input type="radio" id="survey-form" value="no" name="survey-form">no</label>
+
+        <p>Do you intend to look for a side job with flexible working hours?</p>
+        <label><input type="radio" id="survey-form" value="yes" name="survey-form">Yes</label>
+        <label><input type="radio" id="survey-form" value="no" name="survey-form">no</label>
+
+        <p>If you intend to look for a side job, which one will you choose?</p>
+        <label><input type="checkbox" id="survey-form" value="yutuber" name="survey-form">Youtuber</label>
+        <label><input type="checkbox" id="survey-form" value="trader" name="survey-form">trader</label>
+        <label>the reason you chose this job
+          <textarea raws="20" cols="25" id="survey-form" placeholder="explain your reasons..."></textarea>
+        </label>
+
+      </fieldset>
+      <input id="submit" type="submit" value="submit">
+    </form>
+  </body>
+</html>
